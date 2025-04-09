@@ -1,13 +1,13 @@
 - name: play1
-  hosts: Instance 
-  connection: Instance
+  hosts: local 
+  connection: local
   tasks:
   - name: Task1 and play1
     ansible.builtin.debug:
       msg:  "Hello from task1"
 - name: Play2 
-  hosts: Instance 
-  connection: Instance 
+  hosts: local
+  connection: local 
   tasks: 
     - name: Task2 and Play2 
       ansible.builtin.debug:
