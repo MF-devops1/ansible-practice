@@ -4,7 +4,7 @@
   vars:
     course: "Devops with AWS"
     Duration: 120hrs
-    trainer : Siva
+    trainer: Siva
   tasks:
   - name: print the variable
     vars: 
