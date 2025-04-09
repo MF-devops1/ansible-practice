@@ -7,8 +7,8 @@
     name: nginx
     ansible.builtin.package:
   - name: start the nginx
-    name: nginx
     state: started 
+    name: nginx
     ansible.builtin.service:
 
     
