@@ -1,6 +1,6 @@
 - name: play1
   hosts: instance 
-  connection: instace
+  connection: instance
   tasks:
   - name: Task1 and play1
     ansible.builtin.debug:
