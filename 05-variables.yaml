@@ -9,3 +9,6 @@
   - name: print the variable 
     ansible.builtin.debug:
       msg: "course is :{{Course}}, Duration is:{{Duration}}, Trainer is :{{Trainer}} " 
+
+
+      # If we want to declare and use variables, we have to provide in 2 flower braces {{}}
