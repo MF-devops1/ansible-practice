@@ -6,4 +6,9 @@
 
 
 
+# - name: ping   ---- Ping or anything we can provide here,small or caps also fine
+   # hosts: web    ---- which IP address it has to use, we have to give that name here 
+   # tasks: --- we have to mention all tasks below here
+
+
 
