@@ -1,0 +1,6 @@
+- name: multiple server variables
+  hosts: web
+  tasks:
+  - name: Print both server info
+    ansible.builtin.debug:
+      msg: "course {{ course}}, Duration {{ Duration}}, Trainer {{ Trainer}}"
