@@ -1,8 +1,8 @@
 - name: Variable prefernce
   hosts:  local
   connection:  local
-  vars:
-    GREET: "Play"
+  # vars:
+  #   GREET: "Play"
   # vars_files:
   # - course.yaml
   vars_prompt:
