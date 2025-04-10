@@ -18,5 +18,6 @@
       msg: "course is {{course}}, Duration is {{Duration}}, Trainer is {{trainer}}"
 
 
-# play level variables will work in all tasks 
+# play level variables will work for all tasks 
 # Task level variables can be accessed with in a task 
+#Task variables can override play level variables
