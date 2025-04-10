@@ -1,7 +1,7 @@
 - name: Var preference in files
   hosts:  local
   connection: local 
-  Vars:
+  vars:
     GREET: "PLAY"
   vars_files:
   - course.yaml
