@@ -9,9 +9,9 @@
   - name: enter play1
     prompt: enter value
     private: false
-  # tasks:
-  # - name: print value
-  #   # vars: 
-  #   #   GREET: "TASK"
-  #   ansible.builtin.debug:
-  #     msg: "Hello from {{ GREET}}"
+  tasks:
+  - name: print value
+    # vars: 
+    #   GREET: "TASK"
+    ansible.builtin.debug:
+      msg: "Hello from {{ GREET}}"
