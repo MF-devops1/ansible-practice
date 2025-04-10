@@ -1,17 +1,18 @@
-- name: Var preference in files
+- name: Variable prefernce
   hosts:  local
-  connection: local 
+  connections:  local
   vars:
-    GREET: "PLAY"
+  GREET: "Play"
   vars_files:
   - course.yaml
   vars_prompt:
-  - name: enter play1
+  - name: Prompt
     prompt: enter value
-    private: false
+    private: false 
   tasks:
-  - name: print value
-    vars: 
-      GREET: "TASK"
-      ansible.builtin.debug:
-       msg: "Hello from {{ GREET}}"
+  - name: enter task info
+  vars: 
+  GREET: Task
+  ansible.builtin.debug:
+    msg: " Hello from {{ GREET}}" 
+  
