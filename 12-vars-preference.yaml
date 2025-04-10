@@ -1,8 +1,8 @@
 - name: Var preference in files
   hosts:  local
   connection: local 
-  # vars:
-  #   GREET: "PLAY"
+  vars:
+    GREET: "PLAY"
   # vars_files:
   # - course.yaml
   vars_prompt:
