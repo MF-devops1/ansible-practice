@@ -1,10 +1,10 @@
 - name: Var preference in files
   hosts:  local
   connection: local 
-  vars:
-    GREET: "PLAY"
-  vars_files:
-  - course.yaml
+  # vars:
+  #   GREET: "PLAY"
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: enter play1
     prompt: enter value
