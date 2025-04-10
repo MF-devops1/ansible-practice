@@ -13,6 +13,6 @@
   - name: enter task info
   vars: 
     GREET: Task
-  ansible.builtin.debug:
-    msg: " Hello from {{ GREET}}" 
+    ansible.builtin.debug:
+      msg: " Hello from {{ GREET}}" 
   
