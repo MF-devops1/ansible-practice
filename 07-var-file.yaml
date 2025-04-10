@@ -5,6 +5,6 @@
   - course.yaml
   tasks:
     ansible.builtin.debug:
-    msg:  "course is {{course}}, Duration is {{Duration}},trainer is {{Trainer}}"
+      msg:  "course is {{course}}, Duration is {{Duration}},trainer is {{Trainer}}"
 
 
