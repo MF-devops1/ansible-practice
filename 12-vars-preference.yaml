@@ -16,3 +16,6 @@
     ansible.builtin.debug:
      msg: " Hello from {{ GREET}}" 
   
+
+
+  # Prompt var need to check 
