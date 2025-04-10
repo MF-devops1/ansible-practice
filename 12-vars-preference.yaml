@@ -1,6 +1,6 @@
 - name: Variable prefernce
   hosts:  local
-  connections:  local
+  connection:  local
   vars:
   GREET: "Play"
   vars_files:
