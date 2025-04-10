@@ -11,9 +11,9 @@
       course: Ansible  
     ansible.builtin.debug:
      msg: "course is {{course}}, Duration is {{Duration}}, Trainer is {{Trainer}}"
-- name: play2 and task1
-  ansible.builtin.debug:
-    msg:  "course is :{{course}}, Duration is :{{Duration}}, Trainer is:{{Trainer}}"
+  - name: play2 and task1
+    ansible.builtin.debug:
+      msg:  "course is :{{course}}, Duration is :{{Duration}}, Trainer is:{{Trainer}}"
 
  
     
