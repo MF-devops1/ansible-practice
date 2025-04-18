@@ -1,0 +1,14 @@
+- name: installation 
+  hosts: web
+  become: yes
+  tasks:
+  - name: Print installation softwares
+    ansible.builtin.package:
+      name: "{{ item}}"
+      state: installed 
+    loop:
+    - gcc
+    - git
+    - zip
+
+
