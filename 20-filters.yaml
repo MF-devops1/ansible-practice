@@ -46,11 +46,11 @@
     ansible.builtin.debug:
       msg: " Hello {{name | upper}}"
 
-  # - name: print min and max
-  #   vars: 
-  #     numbers: [1,30,24,34,56] 
-  #   ansible.builitin.debug: 
-  #     msg: " min is: {{numbers| min }}, max is :{{numbers| max}}"
+  - name: print min and max
+    vars: 
+      numbers: [1,30,24,34,56] 
+    ansible.builitin.debug: 
+      msg: " min is: {{numbers| min }}, max is :{{numbers| max}}"
 
   # - name: check ipaddress is valid or not 
   # vars: 
