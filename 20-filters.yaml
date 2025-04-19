@@ -38,13 +38,13 @@
     ansible.builtin.debug:
       msg: " hello {{name| lower}}"
 
-  # - name: convert lower to upper 
-  #   tags:
-  #   - lowertoupper 
-  #   vars: 
-  #     name: " Dheeraja Reddy B"
-  #   ansible.builtin.debug:
-  #     msg: " Hello {{name | upper}}"
+  - name: convert lower to upper 
+    tags:
+    - lowertoupper 
+    vars: 
+      name: " Dheeraja Reddy B"
+    ansible.builtin.debug:
+      msg: " Hello {{name | upper}}"
 
   # - name: print min and max
   #   vars: 
