@@ -21,39 +21,39 @@
     ansible.builtin.debug:
       msg: "course info: {{course | dict2items}}"
 
-  - name: convert list into map 
-    vars:
-      course:
-      - {'key': 'name', 'value': 'ansible'}
-      - {'key': 'duration', 'value': '10hrs'}
-      - {'key': 'trainer ', 'value': 'siva'}
-    ansible.builtin.debug:
-        msg: "course info {{ course | items2dict}}"
+  # - name: convert list into map 
+  #   vars:
+  #     course:
+  #     - {'key': 'name', 'value': 'ansible'}
+  #     - {'key': 'duration', 'value': '10hrs'}
+  #     - {'key': 'trainer ', 'value': 'siva'}
+  #   ansible.builtin.debug:
+  #       msg: "course info {{ course | items2dict}}"
 
-  - name: convert upper to lower 
-    tags: 
-    - uppertolower
-    vars:
-      name: " Dheeraja "
-    ansible.builtin.debug:
-      msg: " hello {{name| lower}}"
+  # - name: convert upper to lower 
+  #   tags: 
+  #   - uppertolower
+  #   vars:
+  #     name: " Dheeraja "
+  #   ansible.builtin.debug:
+  #     msg: " hello {{name| lower}}"
 
-  - name: convert lower to upper 
-    tags:
-    - lowertoupper 
-    vars: 
-      name: " Dheeraja Reddy B"
-    ansible.builtin.debug:
-      msg: " Hello {{name | upper}}"
+  # - name: convert lower to upper 
+  #   tags:
+  #   - lowertoupper 
+  #   vars: 
+  #     name: " Dheeraja Reddy B"
+  #   ansible.builtin.debug:
+  #     msg: " Hello {{name | upper}}"
 
-  - name: print min and max
-    vars: 
-      numbers: [1,30,24,34,56] 
-    ansible.builitin.debug: 
-      msg: " min is: {{numbers| min }}, max is :{{numbers| max}}"
+  # - name: print min and max
+  #   vars: 
+  #     numbers: [1,30,24,34,56] 
+  #   ansible.builitin.debug: 
+  #     msg: " min is: {{numbers| min }}, max is :{{numbers| max}}"
 
-  - name: check ipaddress is valid or not 
-  vars: 
-    ip: 23.456.23.566
-  ansible.builtin.debug:
-    msg: "{{ip | ansible.utils.ipaddr}}"           
+  # - name: check ipaddress is valid or not 
+  # vars: 
+  #   ip: 23.456.23.566
+  # ansible.builtin.debug:
+  #   msg: "{{ip | ansible.utils.ipaddr}}"           
