@@ -7,6 +7,11 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
 
   -  name: execute ls command in command module 
-     ansible.builtin.command: ls -ltr > /tmp/output.txt 
+    #  ansible.builtin.command: ls -ltr > /tmp/output.txt 
      ansible.builtin.command: ls -ltr 
-     ansible.builtin.command: lss -llllll
+    #  ansible.builtin.command: lss -llllll
+     register: command_result 
+
+  - name: print the output 
+    ansible.builtin.debug:
+      msg: "{{command_result}}"
