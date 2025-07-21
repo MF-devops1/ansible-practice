@@ -5,7 +5,7 @@
 #   serial: 10
 #   tasks:
 - name: nginx install
-  hosts: nginx
+  hosts: all
   become: yes
   tasks: 
   - name: run nginx
