@@ -9,6 +9,6 @@
   become: yes
   tasks: 
   - name: run nginx
-  ansible.builtin.package: 
-    name: nginx
-    state: present 
+    ansible.builtin.package: 
+      name: nginx
+      state: present 
